@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+     <link rel="stylesheet" href="stickynote.css" />
+    <title>Sticky Notes</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav">
+          <div>
+            <h1><i style="color: #c2ff3d"></i> Sticky Notes</h1>
+          </div>
+          <div>
+            <button onclick="createNote()">Hide / Create Note</button>
+            <button onclick="deleteNotes()">Delete All Notes</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="createBox" style="display: block">
+        <textarea
+          placeholder="Write note..."
+          id="user-input"
+          maxlength="135"
+          style="font-size: 20px"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="notes"></div>
+    </div>
+
+    <script src="stickynotes.js"></script>
+  </body>
+</html>
